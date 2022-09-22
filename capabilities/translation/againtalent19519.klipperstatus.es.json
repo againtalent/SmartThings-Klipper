@@ -1,0 +1,81 @@
+{
+    "tag": "es",
+    "label": "Estado",
+    "attributes": {
+        "printer": {
+            "label": "Impresora",
+            "i18n": {
+				"value": {
+					"offline": {
+						"label": "Desconectada"
+					},
+					"standby": {
+						"label": "Lista"
+					},
+					"printing": {
+						"label": "Imprimiendo"
+					},
+					"paused": {
+						"label": "Pausada"
+					},
+					"error": {
+						"label": "Error"
+					},
+					"unauthorised": {
+						"label": "No Autorizado"
+					},
+					"complete": {
+						"label": "Completado"
+					},
+					"emergency": {
+						"label": "Parada de Emergencia…",
+					},
+					"pause": {
+						"label": "Haciendo una Pausa…",
+					},
+					"resume": {
+						"label": "Reanudar…",
+					},
+					"cancel": {
+						"label": "Cancelar…",
+					},
+					"reboot": {
+						"label": "reiniciar Anfitrión…",
+					},
+					"shutdown": {
+						"label": "Cerrar Anfitrión…",
+					},
+				}
+			}
+        }
+    },
+    "commands": {
+		"sendCommand": {
+			"label": "Send Command",
+			"arguments": {
+				"command": {
+					"i18n": {
+						"emergency": {
+							"label": "¡Parada de Emergencia!",
+						},
+						"pause": {
+							"label": "Haciendo una Pausa",
+						},
+						"resume": {
+							"label": "Reanudar",
+						},
+						"cancel": {
+							"label": "Cancelar",
+						},
+						"reboot": {
+							"label": "reiniciar Anfitrión",
+						},
+						"shutdown": {
+							"label": "Cerrar Anfitrión",
+						},
+					}
+				}
+			}
+		}
+	}
+}

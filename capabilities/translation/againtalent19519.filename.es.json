@@ -1,0 +1,11 @@
+{
+    "tag": "es",
+    "label": "Archivo Actual",
+    "attributes": {
+        "filename": {
+            "label": "Nombre del Archivo",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

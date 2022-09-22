@@ -1,0 +1,81 @@
+{
+    "tag": "ko",
+    "label": "상태",
+    "attributes": {
+        "printer": {
+            "label": "프린터",
+            "i18n": {
+				"value": {
+					"offline": {
+						"label": "오프라인"
+					},
+					"standby": {
+						"label": "준비"
+					},
+					"printing": {
+						"label": "출력중"
+					},
+					"paused": {
+						"label": "일시정지"
+					},
+					"error": {
+						"label": "오류"
+					},
+					"unauthorised": {
+						"label": "허가받지 않은"
+					},
+					"complete": {
+						"label": "완료"
+					},
+					"emergency": {
+						"label": "비상 정지",
+					},
+					"pause": {
+						"label": "정지시키다",
+					},
+					"resume": {
+						"label": "재개",
+					},
+					"cancel": {
+						"label": "취소",
+					},
+					"reboot": {
+						"label": "재부팅",
+					},
+					"shutdown": {
+						"label": "종료",
+					},
+				}
+			}
+        }
+    },
+    "commands": {
+		"sendCommand": {
+			"label": "Send Command",
+			"arguments": {
+				"command": {
+					"i18n": {
+						"emergency": {
+							"label": "비상 정지",
+						},
+						"pause": {
+							"label": "정지시키다",
+						},
+						"resume": {
+							"label": "재개",
+						},
+						"cancel": {
+							"label": "취소",
+						},
+						"reboot": {
+							"label": "재부팅",
+						},
+						"shutdown": {
+							"label": "종료",
+						},
+					}
+				}
+			}
+		}
+	}
+}

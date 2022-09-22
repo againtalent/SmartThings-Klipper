@@ -1,0 +1,17 @@
+{
+    "tag": "ko",
+    "label": "인쇄 시간",
+    "attributes": {
+        "totalTime": {
+            "label": "총 시간",
+            "displayTemplate": "{{attribute}} of {{device.label}} is {{value}}",
+            "i18n": {}
+        },
+        "remainingTime": {
+            "label": "예상 시간",
+            "displayTemplate": "{{attribute}} of {{device.label}} is {{value}}",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

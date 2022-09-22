@@ -1,0 +1,11 @@
+{
+    "tag": "de",
+    "label": "Fortschritte",
+    "attributes": {
+        "percentComplete": {
+            "label": "Prozent Fertig",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

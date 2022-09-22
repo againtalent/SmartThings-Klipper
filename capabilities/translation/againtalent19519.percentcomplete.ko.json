@@ -1,0 +1,11 @@
+{
+    "tag": "ko",
+    "label": "진행상황",
+    "attributes": {
+        "percentComplete": {
+            "label": "완료율",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

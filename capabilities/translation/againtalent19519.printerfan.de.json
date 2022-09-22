@@ -1,0 +1,11 @@
+{
+    "tag": "de",
+    "label": "Lüfter",
+    "attributes": {
+        "speed": {
+            "label": "Geschwindigkeit",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

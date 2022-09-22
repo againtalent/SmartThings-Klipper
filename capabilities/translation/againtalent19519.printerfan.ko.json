@@ -1,0 +1,11 @@
+{
+    "tag": "ko",
+    "label": "냉각 팬",
+    "attributes": {
+        "speed": {
+            "label": "속도",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

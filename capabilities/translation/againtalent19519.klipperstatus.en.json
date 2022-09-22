@@ -1,0 +1,81 @@
+{
+    "tag": "en",
+    "label": "State",
+    "attributes": {
+        "printer": {
+            "label": "Printer",
+            "i18n": {
+				"value": {
+					"offline": {
+						"label": "Offline"
+					},
+					"standby": {
+						"label": "Ready"
+					},
+					"printing": {
+						"label": "Printing"
+					},
+					"paused": {
+						"label": "Paused"
+					},
+					"error": {
+						"label": "Printer Error"
+					},
+					"unauthorised": {
+						"label": "Authorisation Error"
+					},
+					"complete": {
+						"label": "Print Complete"
+					},
+					"emergency": {
+						"label": "Emergency Stop…",
+					},
+					"pause": {
+						"label": "Pausing Print…",
+					},
+					"resume": {
+						"label": "Resuming Print…",
+					},
+					"cancel": {
+						"label": "Cancelling Print…",
+					},
+					"reboot": {
+						"label": "Reboot Host…",
+					},
+					"shutdown": {
+						"label": "Shutdown Host…",
+					},
+				}
+			}
+        }
+    },
+    "commands": {
+		"sendCommand": {
+			"label": "Send Command",
+			"arguments": {
+				"command": {
+					"i18n": {
+						"emergency": {
+							"label": "Emergency Stop!",
+						},
+						"pause": {
+							"label": "Pause Print",
+						},
+						"resume": {
+							"label": "Resume Print",
+						},
+						"cancel": {
+							"label": "Cancel Print",
+						},
+						"reboot": {
+							"label": "Reboot Host",
+						},
+						"shutdown": {
+							"label": "Shutdown Host",
+						},
+					}
+				}
+			}
+		}
+	}
+}

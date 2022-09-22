@@ -1,0 +1,11 @@
+{
+    "tag": "es",
+    "label": "Ventilador",
+    "attributes": {
+        "speed": {
+            "label": "Velocidad",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

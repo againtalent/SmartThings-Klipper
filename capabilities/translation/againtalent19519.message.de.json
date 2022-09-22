@@ -1,0 +1,11 @@
+{
+    "tag": "de",
+    "label": "Bótschaft",
+    "attributes": {
+        "message": {
+            "label": "M117 Bótschaft",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

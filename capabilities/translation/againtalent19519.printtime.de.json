@@ -1,0 +1,17 @@
+{
+    "tag": "de",
+    "label": "Druckzeit",
+    "attributes": {
+        "totalTime": {
+            "label": "Gesamtzeit",
+            "displayTemplate": "{{attribute}} von {{device.label}} ist {{value}}",
+            "i18n": {}
+        },
+        "remainingTime": {
+            "label": "Verbleibende Zeit",
+            "displayTemplate": "{{attribute}} von {{device.label}} ist {{value}}",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

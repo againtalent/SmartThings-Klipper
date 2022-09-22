@@ -1,0 +1,106 @@
+name: moonraker-klipper.v1
+components:
+- id: main
+  label: Klipper
+  capabilities:
+  - id: againtalent19519.klipperstatus
+    version: 1
+  - id: againtalent19519.message
+    version: 1
+  categories:
+  - name: Printer
+- id: printJob
+  label: Current Print Job
+  capabilities:
+  - id: againtalent19519.filename
+    version: 1
+  - id: againtalent19519.percentcomplete
+    version: 1
+  - id: againtalent19519.printtime
+    version: 1
+- id: extruder
+  label: Extruder
+  capabilities:
+  - id: temperatureMeasurement
+    version: 1
+  - id: againtalent19519.printerfan
+    version: 1
+- id: bed
+  label: Bed
+  capabilities:
+  - id: temperatureMeasurement
+    version: 1
+preferences:
+  - title: "IP Address"
+    name: ipAddress
+    description: "IP address of the printer"
+    required: true
+    preferenceType: string
+    definition:
+      minLength: 7
+      maxLength: 15
+      stringType: text
+      default: "192.168.1.x"
+  - title: "Port"
+    name: ipPort
+    description: "Port number of Moonraker (default is http:7125 and https:7130)"
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 100000
+      default: 7125
+  - title: "Protocol"
+    name: ipProtocol
+    description: "http or https (default http)"
+    required: true
+    preferenceType: enumeration
+    definition:
+      options:
+        http: "http"
+        https: "https"
+      default: "http"
+  - title: "API Key"
+    name: apiKey
+    description: "Moonraker API key"
+    required: true
+    preferenceType: string
+    definition:
+      minLength: 0
+      maxLength: 32
+      stringType: text
+      default: ""
+  - title: "HTTP Timeout"
+    name: httpTimeout
+    description: "Seconds before http requests time out (defualt 5)"
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 60
+      default: 5
+  - title: "Online Refresh Cycle"
+    name: pollOnline
+    description: "Interval (seconds) between each refresh of Klipper status."
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 10
+      maximum: 120
+      default: 20
+  - title: "Offline Refresh Cycle"
+    name: pollOffline
+    description: "Interval (seconds) between each attempt to check Klipper is back online."
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 10
+      maximum: 120
+      default: 30
+  - title: "Verbose console log"
+    name: verboseLog
+    description: "For development/debug only. Leave off otherwise."
+    required: true
+    preferenceType: boolean
+    definition:
+      default: false

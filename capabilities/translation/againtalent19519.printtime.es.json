@@ -1,0 +1,17 @@
+{
+    "tag": "es",
+    "label": "Tiempo de impresión",
+    "attributes": {
+        "totalTime": {
+            "label": "Tiempo total de impresión",
+            "displayTemplate": "{{attribute}} of {{device.label}} is {{value}}",
+            "i18n": {}
+        },
+        "remainingTime": {
+            "label": "Estimación",
+            "displayTemplate": "{{attribute}} of {{device.label}} is {{value}}",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

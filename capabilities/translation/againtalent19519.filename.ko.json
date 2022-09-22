@@ -1,0 +1,11 @@
+{
+    "tag": "ko",
+    "label": "현재 파일",
+    "attributes": {
+        "filename": {
+            "label": "파일명",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

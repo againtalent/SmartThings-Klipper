@@ -1,0 +1,5 @@
+name: 'Moonraker-Klipper'
+packageKey: 'moonraker.smartthings'
+permissions:
+  lan: {}
+  discovery: {}

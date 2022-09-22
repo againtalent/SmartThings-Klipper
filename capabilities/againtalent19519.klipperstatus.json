@@ -1,0 +1,38 @@
+{
+    "id": "againtalent19519.klipperstatus",
+    "version": 1,
+    "status": "proposed",
+    "name": "klipperstatus",
+    "ephemeral": false,
+    "attributes": {
+        "printer": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        }
+    },
+    "commands": {
+        "sendCommand": {
+            "name": "sendCommand",
+            "arguments": [
+                {
+                    "name": "command",
+                    "optional": false,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

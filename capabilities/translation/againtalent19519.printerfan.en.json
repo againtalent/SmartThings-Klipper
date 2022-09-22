@@ -1,0 +1,11 @@
+{
+    "tag": "en",
+    "label": "Part Fan",
+    "attributes": {
+        "speed": {
+            "label": "Speed",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

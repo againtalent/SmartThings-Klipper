@@ -1,0 +1,231 @@
+
+{
+	"dashboard":
+	{
+		"states": [
+			{
+				"label": "{{printer.value}}",
+				"alternatives": [
+					{
+						"key": "offline",
+						"value": "{{i18n.attributes.printer.i18n.value.offline.label}}",
+						"type": "inactive"
+					},
+					{
+						"key": "standby",
+						"value": "{{i18n.attributes.printer.i18n.value.standby.label}}",
+						"type": "active"
+					},
+					{
+						"key": "printing",
+						"value": "{{i18n.attributes.printer.i18n.value.printing.label}}",
+						"type": "active"
+					},
+					{
+						"key": "paused",
+						"value": "{{i18n.attributes.printer.i18n.value.paused.label}}",
+						"type": "active"
+					},
+					{
+						"key": "error",
+						"value": "{{i18n.attributes.printer.i18n.value.error.label}}",
+						"type": "active"
+					},
+					{
+						"key": "unauthorised",
+						"value": "{{i18n.attributes.printer.i18n.value.unauthorised.label}}",
+						"type": "inactive"
+					},
+					{
+						"key": "complete",
+						"value": "{{i18n.attributes.printer.i18n.value.complete.label}}",
+						"type": "active"
+					}
+				]
+			}
+		],
+		"actions": []
+	},
+
+	"detailView": [
+		{
+			"label": "{{i18n.label}}",
+			"displayType": "list",
+			"list":
+			{
+				"command":
+				{
+					"name": "sendCommand",
+					"label": "{{i18n.commands.sendCommand.label}}",
+					"alternatives": [
+						{
+							"key": "emergency",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.emergency.label}}",
+							"type": "active"
+						},
+						{
+							"key": "pause",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.pause.label}}",
+							"type": "active"
+						},
+						{
+							"key": "resume",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.resume.label}}",
+							"type": "active"
+						},
+						{
+							"key": "cancel",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.cancel.label}}",
+							"type": "active"
+						},
+						{
+							"key": "reboot",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.reboot.label}}",
+							"type": "active"
+						},
+						{
+							"key": "shutdown",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.shutdown.label}}",
+							"type": "inactive"
+						},
+					],
+					"argumentType": "string"
+				},
+				"state":
+				{
+					"value": "printer.value",
+					"valueType": "string",
+					"alternatives": [
+						{
+							"key": "offline",
+							"value": "{{i18n.attributes.printer.i18n.value.offline.label}}",
+							"type": "inactive"
+						},
+						{
+							"key": "standby",
+							"value": "{{i18n.attributes.printer.i18n.value.standby.label}}",
+							"type": "active"
+						},
+						{
+							"key": "printing",
+							"value": "{{i18n.attributes.printer.i18n.value.printing.label}}",
+							"type": "active"
+						},
+						{
+							"key": "paused",
+							"value": "{{i18n.attributes.printer.i18n.value.paused.label}}",
+							"type": "active"
+						},
+						{
+							"key": "error",
+							"value": "{{i18n.attributes.printer.i18n.value.error.label}}",
+							"type": "active"
+						},
+						{
+							"key": "unauthorised",
+							"value": "{{i18n.attributes.printer.i18n.value.unauthorised.label}}",
+							"type": "inactive"
+						},
+						{
+							"key": "complete",
+							"value": "{{i18n.attributes.printer.i18n.value.complete.label}}",
+							"type": "active"
+						}
+					]
+				}
+			},
+			"state": null
+		}
+	],
+	"automation":
+	{
+		"conditions": [
+			{
+				"label": "{{i18n.label}}",
+				"displayType": "list",
+				"list":
+				{
+					"alternatives": [
+						{
+							"key": "offline",
+							"value": "{{i18n.attributes.printer.i18n.value.offline.label}}",
+							"type": "inactive"
+						},
+						{
+							"key": "standby",
+							"value": "{{i18n.attributes.printer.i18n.value.standby.label}}",
+							"type": "active"
+						},
+						{
+							"key": "printing",
+							"value": "{{i18n.attributes.printer.i18n.value.printing.label}}",
+							"type": "active"
+						},
+						{
+							"key": "paused",
+							"value": "{{i18n.attributes.printer.i18n.value.paused.label}}",
+							"type": "active"
+						},
+						{
+							"key": "error",
+							"value": "{{i18n.attributes.printer.i18n.value.error.label}}",
+							"type": "active"
+						},
+						{
+							"key": "complete",
+							"value": "{{i18n.attributes.printer.i18n.value.complete.label}}",
+							"type": "active"
+						}
+
+					],
+					"value": "printer.value",
+					"valueType": "string"
+				}
+			}
+		],
+		"actions": [
+			{
+				"label": "{{i18n.commands.sendCommand.label}}",
+				"displayType": "list",
+				"list":
+				{
+					"command": "sendCommand",
+					"alternatives": [
+						{
+							"key": "emergency",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.emergency.label}}",
+							"type": "active"
+						},
+						{
+							"key": "pause",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.pause.label}}",
+							"type": "active"
+						},
+						{
+							"key": "resume",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.resume.label}}",
+							"type": "active"
+						},
+						{
+							"key": "cancel",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.cancel.label}}",
+							"type": "active"
+						},
+						{
+							"key": "reboot",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.reboot.label}}",
+							"type": "active"
+						},
+						{
+							"key": "shutdown",
+							"value": "{{i18n.commands.sendCommand.arguments.command.i18n.shutdown.label}}",
+							"type": "inactive"
+						},
+					]
+				}
+			}
+		]
+	},
+	"id": "againtalent19519.klipperstatus",
+	"version": 1
+}

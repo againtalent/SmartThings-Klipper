@@ -1,0 +1,27 @@
+{
+	"dashboard": {
+		"states": [],
+		"actions": []
+	},
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    00,
+                    100
+                ],
+                "unit": "speed.unit",
+                "value": "speed.value",
+                "valueType": "number"
+            }
+        }
+    ],
+	"automation": {
+		"conditions": [],
+		"actions": []
+	},
+	"id": "againtalent19519.printerfan",
+	"version": 1
+}

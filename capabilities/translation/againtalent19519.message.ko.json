@@ -1,0 +1,11 @@
+{
+    "tag": "ko",
+    "label": "메시지",
+    "attributes": {
+        "message": {
+            "label": "M117 메시지",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

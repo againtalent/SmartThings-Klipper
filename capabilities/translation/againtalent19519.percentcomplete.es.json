@@ -1,0 +1,11 @@
+{
+    "tag": "es",
+    "label": "Progreso",
+    "attributes": {
+        "percentComplete": {
+            "label": "Porcentaje Completo",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

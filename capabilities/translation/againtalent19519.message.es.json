@@ -1,0 +1,11 @@
+{
+    "tag": "es",
+    "label": "Mensaje",
+    "attributes": {
+        "message": {
+            "label": "M117 Mensaje",
+            "i18n": {}
+        }
+    },
+    "commands": {}
+}

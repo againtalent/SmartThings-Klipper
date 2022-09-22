@@ -1,0 +1,81 @@
+{
+    "tag": "de",
+    "label": "Status",
+    "attributes": {
+        "printer": {
+            "label": "Drucker",
+            "i18n": {
+				"value": {
+					"offline": {
+						"label": "Offline"
+					},
+					"standby": {
+						"label": "Bereit"
+					},
+					"printing": {
+						"label": "Ausdrucken"
+					},
+					"paused": {
+						"label": "Pausiert"
+					},
+					"error": {
+						"label": "Drucker Fehler"
+					},
+					"unauthorised": {
+						"label": "Zulassung Fehler"
+					},
+					"complete": {
+						"label": "Fertig"
+					},
+					"emergency": {
+						"label": "Not-Halt…",
+					},
+					"pause": {
+						"label": "Pausieren…",
+					},
+					"resume": {
+						"label": "Fortfahren…",
+					},
+					"cancel": {
+						"label": "Kündigen…",
+					},
+					"reboot": {
+						"label": "Neustart Host…",
+					},
+					"shutdown": {
+						"label": "Abschaltung Host…",
+					},
+				}
+			}
+        }
+    },
+    "commands": {
+		"sendCommand": {
+			"label": "Befehl",
+			"arguments": {
+				"command": {
+					"i18n": {
+						"emergency": {
+							"label": "Not-Halt!",
+						},
+						"pause": {
+							"label": "Pausieren",
+						},
+						"resume": {
+							"label": "Fortfahren",
+						},
+						"cancel": {
+							"label": "Kündigen",
+						},
+						"reboot": {
+							"label": "Neustart Host",
+						},
+						"shutdown": {
+							"label": "Abschaltung Host",
+						},
+					}
+				}
+			}
+		}
+	}
+}

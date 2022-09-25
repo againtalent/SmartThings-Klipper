@@ -76,6 +76,13 @@ function to_string_time(s)
 end
 
 
+function urlencode(s)
+
+	return string.gsub(s, "%W", function(c) return string.format("%%%X", string.byte(c)) end)
+
+end
+
+
 -----------------------------------------------------------------
 -- main functions
 -----------------------------------------------------------------
@@ -287,7 +294,7 @@ function update_printer_stats(printer_data, device)
 			slicer_estimated_time = false  -- assume it failed, update later
 
 			console_log(device, 'Downloading current gcode file metadata')
-			return_code, return_data = download_data('GET', '/server/files/metadata?filename='..printer_data["result"]["status"]["print_stats"]["filename"], device)
+			return_code, return_data = download_data('GET', '/server/files/metadata?filename=' .. urlencode(printer_data["result"]["status"]["print_stats"]["filename"]), device)
 
 			if(return_code == 200) then
 

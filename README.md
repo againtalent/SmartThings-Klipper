@@ -1,6 +1,6 @@
 # SmartThings Edge Klipper 3D Printer Monitor
 
-Monitor the status and issue basic commands to a Klipper 3D printer (via Moonraker) on the Samsung SmartThings platform.
+SmartThings Edge Driver to monitor the status and issue basic commands to a [Klipper](https://github.com/Klipper3d/klipper) 3D printer (via the [Moonraker API](https://github.com/Arksine/moonraker)) on the Samsung SmartThings platform.
 
 Monitoring includes:
 - Online/offline status
@@ -17,7 +17,7 @@ Printer commands:
 - Reboot Host (Pi)
 - Shutdown Host (Pi)
 
-Both the status and commands can be used in routines.
+Both the status and commands can be used in routines. For example, sending a notification when a print is completed, or automatically shutting down the printer once it's cooled down.
 
 ## Prerequisites
 
@@ -40,3 +40,7 @@ Both the status and commands can be used in routines.
 - Temperature values in routines are limited to -20°C - 50°C because the driver uses SmartThings' temperatureMeasurement capability
   - You do get pretty graphs in return, however
 - Print time remaining estimate uses the metadata provided by the slicer
+
+## Support, Feedback, Bug Reports
+
+Please use the dedicated thread on the SmartThings Community: https://community.smartthings.com/t/st-edge-klipper-3d-printer/248479

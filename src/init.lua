@@ -71,11 +71,13 @@ function to_string_time(s)
 	if(days > 0)        then return string.format("%dd %dh %dm", days, hours, minutes)
 	elseif(hours > 0)   then return string.format("%dh %dm", hours, minutes)
 	elseif(minutes > 0) then return string.format("%dm", minutes)
-	else                     return string.format("%ds", seconds) end
+	else                     return string.format("%ds", seconds)
+	end
 
 end
 
 
+-- escape non-word characters for adding to a url
 function urlencode(s)
 
 	return string.gsub(s, "%W", function(c) return string.format("%%%X", string.byte(c)) end)

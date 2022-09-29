@@ -18,6 +18,9 @@
 					"paused": {
 						"label": "Paused"
 					},
+					"cancelled": {
+						"label": "Cancelled"
+					},
 					"error": {
 						"label": "Printer Error"
 					},

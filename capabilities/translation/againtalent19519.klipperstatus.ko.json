@@ -18,6 +18,9 @@
 					"paused": {
 						"label": "일시정지"
 					},
+					"cancelled": {
+						"label": "취소 된"
+					},
 					"error": {
 						"label": "오류"
 					},

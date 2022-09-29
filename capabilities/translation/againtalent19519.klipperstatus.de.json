@@ -18,6 +18,9 @@
 					"paused": {
 						"label": "Pausiert"
 					},
+					"cancelled": {
+						"label": "Abgebrochen"
+					},
 					"error": {
 						"label": "Drucker Fehler"
 					},

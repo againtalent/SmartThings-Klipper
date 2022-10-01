@@ -5,6 +5,7 @@ SmartThings Edge Driver to monitor the status and issue basic commands to a [Kli
 Monitoring includes:
 - Online/offline status
 - Current printer state
+- Print progress
 - Extruder and bed temperatures
 - Part cooling fan speed
 - Messages via the M117 gcode
@@ -33,13 +34,14 @@ Both the status and commands can be used in routines. For example, sending a not
 
 ## Limitations
 
-- HTTPS is untested
+- HTTPS is untested - feedback would be appreciated
 - Only the main extruder is supported
 - Only one printer (instance) is supported
   - Multiple instances will be implemented in the future
 - Temperature values in routines are limited to -20°C - 50°C because the driver uses SmartThings' temperatureMeasurement capability
   - You do get pretty graphs in return, however
-- Print time remaining estimate uses the metadata provided by the slicer
+- Print time remaining only uses the estimated time metadata provided by the slicer
+  - Other methods (eg. filament length) will be added in the future
 
 ## Support, Feedback, Bug Reports
 

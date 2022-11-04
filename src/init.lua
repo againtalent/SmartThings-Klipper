@@ -85,6 +85,20 @@ function urlencode(s)
 end
 
 
+-- make the filename look nice
+function fixFilename(filename)
+
+	-- strip out directories
+	filename = string.match(filename, "([^%/]+)$")
+
+	-- replace underscores with spaces
+	filename = string.gsub(filename, "_", " ")
+
+	return filename
+
+end
+
+
 -----------------------------------------------------------------
 -- main functions
 -----------------------------------------------------------------
@@ -241,7 +255,7 @@ function update_printer_stats(printer_data, device)
 	end
 
 	if isset(printer_data, "result", "status", "print_stats", "filename") then
-		filename = string.match(printer_data["result"]["status"]["print_stats"]["filename"], "([^%/]+)$")  -- strip out directories
+		filename = fixFilename(printer_data["result"]["status"]["print_stats"]["filename"])  
 		if((filename ~= nil) and (#filename > 0)) then
 			device:emit_component_event(device.profile.components.printJob, cap_filename.filename(filename))
 		else

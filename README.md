@@ -26,7 +26,7 @@ Both the status and commands can be used in routines. For example, sending a not
 
 ## Installation
 
-1. Enroll your SmartThings hub in the AgainTalent Release Channel: https://bestow-regional.api.smartthings.com/invite/QLMO8LK4rk23
+1. Enroll your SmartThings hub in the AgainTalent Release Channel: https://bestow-regional.api.smartthings.com/invite/RBlEL903Oy2E
 2. Install the Moonraker-Klipper driver
 3. Open the SmartThings app and scan for nearby devices
 4. Once the printer is 'found', edit its settings to configure the IP address and other fields
